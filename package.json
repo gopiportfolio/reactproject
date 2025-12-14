@@ -9,7 +9,6 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-
   "dependencies": {
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
@@ -17,7 +16,7 @@
     "react-toastify": "^11.0.5",
     "bootstrap": "5.3.8",
     "react-bootstrap": "2.10.10",
-    "next": "16.0.8",
+    "next": "16.0.10",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
     "lucide-react": "0.559.0",
