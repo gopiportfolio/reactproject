@@ -444,32 +444,47 @@ useEffect(() => {
 
 
       <Container>
-        <div style={styles.section} className="scroll-section">
-          <div style={styles.aboutSection}>
-            <div style={styles.aboutImage}></div>
-            <div style={styles.aboutContent}>
-              <h2 style={styles.aboutTitle}>About Royal Stay</h2>
-              <p style={styles.aboutText}>
-                Welcome to Royal Stay, your trusted partner for luxury hotel bookings since 2015. We specialize in
-                offering the best rates and exceptional customer service to millions of travelers worldwide. Our
-                platform connects you with premium accommodations across 150+ countries, ensuring comfort and
-                convenience at every step of your journey.
-              </p>
-              <p style={styles.aboutText}>
-                With over 15 years of experience, we've earned the trust of countless guests through our commitment to
-                transparency, reliability, and personalized service. Whether you're planning a weekend getaway, a
-                business trip, or an extended vacation, HotelBook makes it easy to find and book your ideal hotel.
-              </p>
-              <Button
+           {/* About Section */}
+       <div style={styles.section} className="scroll-section">
+         <Row className="align-items-center g-4">
+           
+           {/* Left Image */}
+           <Col lg={6} md={12}>
+             <img
+           src={aboutImg}
+           alt="About Royal Stay"
+           style={styles.aboutImage}
+         />
+           </Col>
+       
+           {/* Right Content */}
+           <Col lg={6} md={12}>
+           <div>
+             <h2 style={{ fontSize: "2.2rem", fontWeight: "700",textAlign: "center", }}>
+               About Royal Stay..
+             </h2></div>
+       <div>
+             <p style={{ color: "#6c757d", fontSize: "1rem", lineHeight: "1.7", textAlign: "justify",}}>
+               Royal Stay is your trusted partner for hotel bookings worldwide. For over a decade,
+               we’ve helped travelers discover comfortable, affordable, and memorable stays.Our platform combines cutting-edge technology with customer-first values to deliver
+               seamless booking experiences, secure payments, and unmatched support.Our platform combines cutting-edge technology with customer-first values to deliver seamless 
+               booking experiences, secure payments, and unmatched support. 
+             </p>
+             </div>
+<Button
                 variant="primary"
                 onClick={() => navigate("/about")}
                 style={{ paddingLeft: "2rem", paddingRight: "2rem" }}
               >
                 View More About Us
               </Button>
-            </div>
-          </div>
-        </div>
+
+
+           </Col>
+       
+         </Row>
+       </div>
+
 
         <div style={styles.section} className="scroll-section">
           <h2 style={styles.sectionTitle}>Our Key Amenities</h2>
