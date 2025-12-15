@@ -171,6 +171,7 @@ const styles = {
     marginBottom: "3rem",
      transition: "background-image 1s ease-in-out",
   },
+
   heroContent: {
     zIndex: 2,
     position: "relative",
@@ -295,6 +296,13 @@ const styles = {
     textAlign: "center",
     color: "#212529",
   },
+
+
+
+
+
+
+  
 }
 
 const Home = () => {
@@ -444,33 +452,32 @@ useEffect(() => {
 
 
       <Container>
-           {/* About Section */}
-       <div style={styles.section} className="scroll-section">
          <Row className="align-items-center g-4">
-           
-           {/* Left Image */}
-           <Col lg={6} md={12}>
-             <img
-           src={aboutImg}
-           alt="About Royal Stay"
-           style={styles.aboutImage}
-         />
-           </Col>
-       
-           {/* Right Content */}
-           <Col lg={6} md={12}>
-           <div>
-             <h2 style={{ fontSize: "2.2rem", fontWeight: "700",textAlign: "center", }}>
-               About Royal Stay..
-             </h2></div>
-       <div>
-             <p style={{ color: "#6c757d", fontSize: "1rem", lineHeight: "1.7", textAlign: "justify",}}>
-               Royal Stay is your trusted partner for hotel bookings worldwide. For over a decade,
-               we’ve helped travelers discover comfortable, affordable, and memorable stays.Our platform combines cutting-edge technology with customer-first values to deliver
-               seamless booking experiences, secure payments, and unmatched support.Our platform combines cutting-edge technology with customer-first values to deliver seamless 
-               booking experiences, secure payments, and unmatched support. 
-             </p>
-             </div>
+  <Col lg={6} md={12}>
+    <div
+      style={{
+        backgroundImage: `url(${aboutImg})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height: "320px",
+        borderRadius: "8px",
+      }}
+    />
+  </Col>
+
+  <Col lg={6} md={12}>
+  <div>
+   <h2 style={{ fontSize: "2.2rem", fontWeight: "700",textAlign: "center", }}>
+        About Royal Stay..
+      </h2></div>
+<div>
+      <p style={{ color: "#6c757d", fontSize: "1rem", lineHeight: "1.7", textAlign: "justify",}}>
+        Royal Stay is your trusted partner for hotel bookings worldwide. For over a decade,
+        we’ve helped travelers discover comfortable, affordable, and memorable stays.Our platform combines cutting-edge technology with customer-first values to deliver
+        seamless booking experiences, secure payments, and unmatched support.Our platform combines cutting-edge technology with customer-first values to deliver seamless 
+        booking experiences, secure payments, and unmatched support.</p>
+      </div>
+
 <Button
                 variant="primary"
                 onClick={() => navigate("/about")}
@@ -479,11 +486,8 @@ useEffect(() => {
                 View More About Us
               </Button>
 
-
-           </Col>
-       
-         </Row>
-       </div>
+  </Col>
+</Row>
 
 
         <div style={styles.section} className="scroll-section">
